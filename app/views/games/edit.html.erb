@@ -1,0 +1,10 @@
+<div class="banner2" style="background-image: url(https://cdn.lynda.com/course/477451/477451-636198978267245657-16x9.jpg);">
+	<div class="banner2-content">
+		<h1><%= @question %></h1>
+
+			<p>
+				<%= link_to "Yes", game_path(id: @game_id, question_id: @question_id + 1, answer: "yes"), method: :patch %>
+				<%= link_to "No", game_path(id: @game_id, question_id: @question_id + 1, answer: "no"), method: :patch %>
+			</p>
+	</div>
+</div>
